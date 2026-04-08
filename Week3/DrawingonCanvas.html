@@ -1,0 +1,84 @@
+<DocType html>
+<html lang = "en">
+    <head>
+        <title> week 3 Drawing on Canvas Lab</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Drawing on Canvas Example<h1>
+            <canvas id=canvas width ="800" height="600" style="border: 1px solid black,"></canvas>
+            <!-- IN doccument JavaScript--->
+                <script>
+                    //These varables are used to set up the canvas
+                    var canvas= document.getElementById("canvas");
+                    var ctx = canvas.getContext('2d');
+
+                    ctx.fillStyle ="red";
+                    ctx.fillRect(20,20,50,100);
+                    //Drawing a Rectangle
+                          
+                    ctx.fillStyle ="#00f";
+                    ctx.fillRect(80,20,50,100);
+
+                    //outline box
+                    ctx.strokeStyle = "orange";
+                    ctx.strokeRect(140,20,50,100);
+
+                     ctx.strokeStyle = "blue";
+                    ctx.strokeRect(200,20,50,100);
+                    //Lets draw a circle
+                    ctx.strokeStyle = "green"
+                    ctx.beginPath();
+                    ctx.arc(50,200,20,0,2*Math.PI)
+                    ctx.stroke();
+                         //All the commands for drawing the circle will go between here
+                    //circle 2
+                      ctx.strokeStyle = "red"
+                    ctx.beginPath();
+                    ctx.arc(100,200,20,0,2*Math.PI)
+                    ctx.stroke();
+                       
+                    //circle 3 fil
+                    ctx.fillStyle = "yellow"
+                    ctx.beginPath();
+                    ctx.arc(150,200,20,0,2*Math.PI)
+                    ctx.fill();
+                        //circle 4 filled with an outline
+                    ctx.strokeStyle = "green"
+                    ctx.fillStyle ="black"
+                    ctx.lineWidth = 5;
+                    ctx.beginPath();
+                    ctx.arc(200,200,20,0,2*Math.PI)
+                    ctx.fill();
+                    ctx.stroke();
+
+                    // Let's draw some custom shapes
+                    ctx.lineWidth =1.0;
+                    ctx.beginPath();
+                    ctx.moveTo(50,300);
+                    ctx.lineTo(75,350);
+                    ctx.lineTo(25,350);
+                    ctx.lineTo(50,300);
+                    ctx.stroke();
+
+                    ctx.lineWidth =1.0;
+                    ctx.beginPath();
+                    ctx.moveTo(150,300);
+                    ctx.lineTo(175,350);
+                    ctx.lineTo(125,350);
+                    ctx.lineTo(150,300);
+                    ctx.stroke();
+
+                   
+                    ctx.lineWidth =1.0;
+                    ctx.fillStyle = "silver"
+                    ctx.beginPath();
+                    ctx.moveTo(250,300);
+                    ctx.lineTo(275,350);
+                    ctx.lineTo(225,350);
+                    ctx.lineTo(250,300);
+                    ctx.fill();
+                    ctx.stroke();
+                        </script>
+                    </body>
+        </html>
