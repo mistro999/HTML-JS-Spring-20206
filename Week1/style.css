@@ -1,0 +1,14 @@
+/**css file/
+
+*{
+margine 0;
+pooding 0;
+box-sizing nparder box;
+}
+*/ base css
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background :#0f1728;
+    color:#e2eff0;
+    line-height:1.5 ;
+}
