@@ -1,14 +1,65 @@
-/**css file/
+/**CSS file */
 
-*{
-margine 0;
-pooding 0;
-box-sizing nparder box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boarder-box;
 }
-*/ base css
-body{
-    font-family: 'Courier New', Courier, monospace;
-    background :#0f1728;
-    color:#e2eff0;
-    line-height:1.5 ;
+
+/*Base CSS Style*/
+body {
+    font-family: system-ui, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.5;
+
 }
+
+.nav {
+    display: flex;
+    background: #0f1720;
+    justify-content: space-balance;
+    align-items: center;
+    padding: Item;
+}
+
+.nav a {
+    color: #e2efe0;
+    text-decoration: none;
+
+}
+
+section {
+    padding: 1rem;
+
+}
+
+section h2 {
+    margin-right: 1rem;
+    color: black;
+    padding: 0.7rem 1, 2;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-imagine {
+    height: 160px;
+    background: #0f172a;
+    display: center;
+    align-items: center;
+
+}
+
+/*modlie and tablet and phone**/
+@media (min-widith: 768px) {
+    section h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* ing{
+    display: block;
+    margin: autto;
+    nav-width: 300px;
+} */
